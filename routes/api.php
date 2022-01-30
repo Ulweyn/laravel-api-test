@@ -22,4 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::get('/click', [ClickController::class, 'click']);
-Route::get('stats/', [ClickController::class, 'stats']);
+Route::get('/stats', [ClickController::class, 'stats']);

@@ -13,12 +13,13 @@ class ClickFactory extends Factory
      */
     public function definition()
     {
+        $timestamps = $this->faker->date;
         return [
             'campaign_id'=>rand(1,20),
             'link_id'=>rand(1,20),
             'user_ip'=>$this->faker->ipv4,
-            'created_at'=>$this->faker->date,
-            'updated_at'=>$this->faker->date
+            'created_at'=>$timestamps,
+            'updated_at'=>$timestamps
         ];
     }
 }
